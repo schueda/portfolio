@@ -1,7 +1,7 @@
 'use client';
 
 import HeroSection from './components/HeroSection';
-import SystemArchitecture from './components/SystemArchitecture';
+import SystemArchitecture from './components/ProjectsSection';
 import TechnicalMetrics from './components/TechnicalMetrics';
 import ContactSection from './components/ContactSection';
 

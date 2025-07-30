@@ -12,28 +12,35 @@ const projects = [
 		href: '/path-to-resume.pdf'
 	},
 	{
-		title: 'Social Media App',
-		description: 'Full-featured social platform with real-time messaging and notifications',
-		image: '/code.jpg',
-		tags: ['Next.js', 'Socket.io', 'Prisma', 'TailwindCSS'],
+		title: 'L-system Generator',
+		description: 'A toy app that allows experimenting and playing with procedurally generated art',
+		image: '/lsystems.jpg',
+		tags: ['Swift', 'UIKit', 'ViewCode'],
 		href: '/path-to-resume.pdf'
 	},
 	{
-		title: 'E-commerce Dashboard',
+		title: 'The World is Quiet',
+		description: 'A PlaygroundBook to study and practice the Brazilian Sign Language alphabet',
+		image: '/twiq.jpg',
+		tags: ['Swift', 'SpriteKit', 'WWDC21 Winner'],
+		href: '/path-to-resume.pdf'
+	},
+	{
+		title: 'Atom',
+		description: 'An interactive story about perception and reallity on a Swift PlaygroundApp',
+		image: '/atom.png',
+		tags: ['Swift', 'SwiftUI', 'SpriteKit', 'WWDC22 Winner'],
+		href: '/path-to-resume.pdf'
+	},
+	{
+		title: 'Wizards vs Robots',
 		description: 'A modern dashboard with dark mode, real-time charts, and responsive design',
 		image: '/laptop.jpg',
 		tags: ['React', 'TypeScript', 'Tailwind CSS', 'Chart.js'],
 		href: '/path-to-resume.pdf'
 	},
 	{
-		title: 'Social Media App',
-		description: 'Full-featured social platform with real-time messaging and notifications',
-		image: '/code.jpg',
-		tags: ['Next.js', 'Socket.io', 'Prisma', 'TailwindCSS'],
-		href: '/path-to-resume.pdf'
-	},
-	{
-		title: 'E-commerce Dashboard',
+		title: 'Wizards vs Robots',
 		description: 'A modern dashboard with dark mode, real-time charts, and responsive design',
 		image: '/laptop.jpg',
 		tags: ['React', 'TypeScript', 'Tailwind CSS', 'Chart.js'],

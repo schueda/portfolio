@@ -9,43 +9,36 @@ const projects = [
 		description: 'An arcade game with bike thematic and astonishing pixel art',
 		image: '/nobreak.png',
 		tags: ['Swift', 'UIKit', 'ViewCode', 'SpriteKit'],
-		href: '/path-to-resume.pdf'
+		href: '/'
 	},
 	{
 		title: 'L-system Generator',
 		description: 'A toy app that allows experimenting and playing with procedurally generated art',
 		image: '/lsystems.jpg',
 		tags: ['Swift', 'UIKit', 'ViewCode'],
-		href: '/path-to-resume.pdf'
+		href: '/'
 	},
 	{
 		title: 'The World is Quiet',
 		description: 'A PlaygroundBook to study and practice the Brazilian Sign Language alphabet',
 		image: '/twiq.jpg',
 		tags: ['Swift', 'SpriteKit', 'WWDC21 Winner'],
-		href: '/path-to-resume.pdf'
+		href: '/'
 	},
 	{
 		title: 'Atom',
 		description: 'An interactive story about perception and reallity on a Swift PlaygroundApp',
 		image: '/atom.png',
 		tags: ['Swift', 'SwiftUI', 'SpriteKit', 'WWDC22 Winner'],
-		href: '/path-to-resume.pdf'
+		href: '/'
 	},
 	{
 		title: 'Wizards vs Robots',
-		description: 'A modern dashboard with dark mode, real-time charts, and responsive design',
-		image: '/laptop.jpg',
-		tags: ['React', 'TypeScript', 'Tailwind CSS', 'Chart.js'],
-		href: '/path-to-resume.pdf'
-	},
-	{
-		title: 'Wizards vs Robots',
-		description: 'A modern dashboard with dark mode, real-time charts, and responsive design',
-		image: '/laptop.jpg',
-		tags: ['React', 'TypeScript', 'Tailwind CSS', 'Chart.js'],
-		href: '/path-to-resume.pdf'
-	},
+		description: 'A social deduction game that unites the physical with the digital',
+		image: '/wvsr.png',
+		tags: ['Swift', 'TypeScript', 'WebSocket', 'UIKit', 'SpriteKit'],
+		href: '/'
+	}
 ];
 
 export default function ProjectsSection() {

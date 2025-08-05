@@ -1,116 +1,125 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+
+const experienceData = [
+  {
+    sectionTitle: "FourSys",
+    cards: [
+      {
+        title: "IOS Software Engineer",
+        period: "November 2024 - Present",
+        location: "Remote",
+        details: [
+          "Engineered and deployed key features for the Bradesco iOS app, enhancing user experience and functionality.",
+          "Successfully navigated and enhanced a large-scale, complex codebase, improving maintainability and performance.",
+          "Applied Agile, Swift, and Software Architecture best practices daily.",
+        ],
+      },
+    ],
+  },
+  {
+    sectionTitle: "Airbus Defence and Space",
+    cards: [
+      {
+        title: "Intern",
+        period: "April 2024 - August 2024",
+        location: "Ingolstadt, Germany",
+        details: [
+          "Wrote a thesis on the identification and provision of security measures for onboard military aircraft software.",
+          "Researched and deepened the knowledge of cyber-security, as well as software engineering.",
+        ],
+      },
+    ],
+  },
+  {
+    sectionTitle: "Apple Developer Academy PUCPR",
+    cards: [
+      {
+        title: "Jr. Mentor",
+        period: "January 2023 - February 2024",
+        location: "Curitiba, Brazil",
+        details: [
+          "Guided and mentored a group of 50 students in coding iOS native Apps.",
+          "Provided 1-on-1 coding sessions and taught concepts such as Object-Oriented Programming, code optimization, Clean Code principles, and versioning control.",
+          "Assisted students in understanding and using Apple&apos;s newest frameworks.",
+        ],
+      },
+      {
+        title: "Learner",
+        period: "March 2021 - December 2022",
+        location: "Curitiba, Brazil",
+        details: [
+          "Created a great quantity of native iOS Apps in Swift, using a variety of frameworks from Apple.",
+          "Learned Object-Oriented programming, project management, design patterns, and software architecture.",
+          "Gained some introductory knowledge in UX/UI design and business.",
+          "Developed soft skills such as storytelling, teamwork, and effective interpersonal communication.",
+        ],
+      },
+    ],
+  },
+  {
+    sectionTitle: "Fast Pro",
+    cards: [
+      {
+        title: "Jr. Developer",
+        period: "July 2020 - September 2020",
+        location: "Remote",
+        details: [
+          "Built a dashboard to map and visualize mobile network dead zones in São Paulo.",
+          "Utilized JavaScript to parse and analyze geospatial data collected from a mobile, city-wide geolocator to pinpoint network failures.",
+        ],
+      },
+    ],
+  },
+];
 
 export default function TechnicalMetrics() {
-	return (
-		<section className="py-20 px-4 bg-gray-900/50">
-			<div className="max-w-6xl mx-auto">
-				<motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-3xl font-bold mb-12 text-center">
-					Impact & Achievements
-				</motion.h2>
+  return (
+    <section className="py-20 px-4 bg-gray-900/50">
+      <div className="max-w-6xl mx-auto">
+        <motion.h2
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="text-3xl font-bold mb-12 text-center"
+        >
+          Experience
+        </motion.h2>
 
-				<div className="grid grid-cols-1 gap-12">
-					{/* System Performance */}
-					<div>
-						<h3 className="text-xl font-semibold mb-6 text-green-400">System Performance</h3>
-						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-							<motion.div
-								initial={{ opacity: 0, scale: 0.95 }}
-								whileInView={{ opacity: 1, scale: 1 }}
-								viewport={{ once: true }}
-								className="bg-gray-800/50 rounded-lg p-6 border border-gray-700"
-							>
-								<h4 className="text-lg font-semibold text-gray-300">API Gateway</h4>
-								<ul className="mt-2 space-y-2 text-gray-400">
-									<li>• P95 latency reduced from 250ms to 80ms</li>
-									<li>• 99.99% availability achieved</li>
-									<li>• Handles 2M requests/day</li>
-								</ul>
-							</motion.div>
-							<motion.div
-								initial={{ opacity: 0, scale: 0.95 }}
-								whileInView={{ opacity: 1, scale: 1 }}
-								viewport={{ once: true }}
-								className="bg-gray-800/50 rounded-lg p-6 border border-gray-700"
-							>
-								<h4 className="text-lg font-semibold text-gray-300">Database Optimization</h4>
-								<ul className="mt-2 space-y-2 text-gray-400">
-									<li>• Query response time improved by 70%</li>
-									<li>• Implemented efficient indexing strategy</li>
-									<li>• Reduced DB load by 45%</li>
-								</ul>
-							</motion.div>
-						</div>
-					</div>
-
-					{/* Infrastructure & DevOps */}
-					<div>
-						<h3 className="text-xl font-semibold mb-6 text-green-400">Infrastructure & DevOps</h3>
-						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-							<motion.div
-								initial={{ opacity: 0, scale: 0.95 }}
-								whileInView={{ opacity: 1, scale: 1 }}
-								viewport={{ once: true }}
-								className="bg-gray-800/50 rounded-lg p-6 border border-gray-700"
-							>
-								<h4 className="text-lg font-semibold text-gray-300">Cloud Infrastructure</h4>
-								<ul className="mt-2 space-y-2 text-gray-400">
-									<li>• Reduced AWS costs by 35%</li>
-									<li>• Implemented auto-scaling for 20+ services</li>
-									<li>• Zero-downtime deployments</li>
-								</ul>
-							</motion.div>
-							<motion.div
-								initial={{ opacity: 0, scale: 0.95 }}
-								whileInView={{ opacity: 1, scale: 1 }}
-								viewport={{ once: true }}
-								className="bg-gray-800/50 rounded-lg p-6 border border-gray-700"
-							>
-								<h4 className="text-lg font-semibold text-gray-300">CI/CD Pipeline</h4>
-								<ul className="mt-2 space-y-2 text-gray-400">
-									<li>• Reduced deployment time by 65%</li>
-									<li>• Automated testing coverage at 90%</li>
-									<li>• Integration tests success rate 99.5%</li>
-								</ul>
-							</motion.div>
-						</div>
-					</div>
-
-					{/* Development & Leadership */}
-					<div>
-						<h3 className="text-xl font-semibold mb-6 text-green-400">Development & Leadership</h3>
-						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-							<motion.div
-								initial={{ opacity: 0, scale: 0.95 }}
-								whileInView={{ opacity: 1, scale: 1 }}
-								viewport={{ once: true }}
-								className="bg-gray-800/50 rounded-lg p-6 border border-gray-700"
-							>
-								<h4 className="text-lg font-semibold text-gray-300">Code Quality</h4>
-								<ul className="mt-2 space-y-2 text-gray-400">
-									<li>• Led adoption of TypeScript across backend</li>
-									<li>• Established coding standards</li>
-									<li>• Reduced technical debt by 40%</li>
-								</ul>
-							</motion.div>
-							<motion.div
-								initial={{ opacity: 0, scale: 0.95 }}
-								whileInView={{ opacity: 1, scale: 1 }}
-								viewport={{ once: true }}
-								className="bg-gray-800/50 rounded-lg p-6 border border-gray-700"
-							>
-								<h4 className="text-lg font-semibold text-gray-300">Team Impact</h4>
-								<ul className="mt-2 space-y-2 text-gray-400">
-									<li>• Mentored 4 junior developers</li>
-									<li>• Created 30+ technical documentation guides</li>
-									<li>• Led 3 major system migrations</li>
-								</ul>
-							</motion.div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	);
+        <div className="grid grid-cols-1 gap-12">
+          {experienceData.map((section, sectionIndex) => (
+            <div key={sectionIndex}>
+              <h3 className="text-xl font-semibold mb-6 text-green-400 text-center">
+                {section.sectionTitle}
+              </h3>
+              <div className="flex flex-wrap justify-center gap-6">
+                {section.cards.map((card, cardIndex) => (
+                  <motion.div
+                    key={cardIndex}
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    className="bg-gray-800/50 rounded-lg p-6 border border-gray-700 w-full max-w-md"
+                  >
+                    <h4 className="text-lg font-semibold text-gray-300 text-center">
+                      {card.title}
+                    </h4>
+                    <p className="text-gray-400 text-sm mb-4 text-center">
+                      {card.period} • {card.location}
+                    </p>
+                    <ul className="mt-2 space-y-2 text-gray-400">
+                      {card.details.map((detail, detailIndex) => (
+                        <li key={detailIndex}>• {detail}</li>
+                      ))}
+                    </ul>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }

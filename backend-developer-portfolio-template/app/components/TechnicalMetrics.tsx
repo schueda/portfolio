@@ -42,7 +42,7 @@ const experienceData = [
         details: [
           "Guided and mentored a group of 50 students in coding iOS native Apps.",
           "Provided 1-on-1 coding sessions and taught concepts such as Object-Oriented Programming, code optimization, Clean Code principles, and versioning control.",
-          "Assisted students in understanding and using Apple&apos;s newest frameworks.",
+          "Assisted students in understanding and using Apple's newest frameworks.",
         ],
       },
       {
